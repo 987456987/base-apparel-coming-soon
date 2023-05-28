@@ -24,7 +24,6 @@
         const errorText = document.querySelector('.error-text');
 
         form.addEventListener('submit', function(event) {
-          event.preventDefault(); // Prevent form submission
           const emailInput = form.querySelector('input[type="email"]');
           const email = emailInput.value;
 
@@ -35,12 +34,10 @@
             errorText.style.display = 'none';
             emailInput.classList.remove('error');
             console.log('Submitted email:', email);
-            // Here you can perform additional actions like sending the email to a server
           }
         });
 
         function isValidEmail(email) {
-          // Use a regular expression to validate the email address
           const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           return regex.test(email);
         }
