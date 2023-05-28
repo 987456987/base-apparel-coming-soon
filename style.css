@@ -48,6 +48,7 @@
     font-size: 16px;
     font-weight: 400;
     max-width: 450px;
+    padding: 2em 0;
 }
 
 .form-email{
@@ -102,10 +103,10 @@
     .text{
         text-align: center;
         margin: auto;
-        padding: 1em 2em;
+        padding: 2em 2em;
     }
     .form-email{
-        margin-left: 2em;
+        padding-left: 3em;
     }
 
 }
