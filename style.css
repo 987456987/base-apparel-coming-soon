@@ -4,6 +4,44 @@
     margin: 0;
 }
 
+.logo {
+    width: 250px;
+    padding: 4em 0;
+}
+
 .img-mobile {
     display: none;
+}
+
+.img-desktop {
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: 'Josefin Sans', sans-serif;
+    color: hsl(0, 6%, 24%);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5em;
+}
+
+.head {
+    font-weight: 600;
+
+}
+
+.head-accent {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.text {
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    font-weight: 400;
 }
