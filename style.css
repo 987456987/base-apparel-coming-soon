@@ -35,6 +35,7 @@
 .head {
     font-weight: 600;
     font-size: 5em;
+    letter-spacing: .2em;
 }
 
 .head-accent {
@@ -67,14 +68,17 @@
     }
     .logo{
         margin-left: 2em;
+        padding: 2em 0;
+        width: 150px;
     }
     .head{
         text-align: center;
-        font-size: 3.5em;
+        font-size: 3em;
     }
     .text{
         text-align: center;
         margin: auto;
+        padding: 1em 2em;
     }
     .form-email{
         margin: auto;
