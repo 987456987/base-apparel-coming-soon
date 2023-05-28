@@ -45,14 +45,20 @@
     </main>
 
     <script>
-      document.addEventListener('invalid', (function(){
-      return function(e) {
+      document.addEventListener('invalid', function(e) {
         e.preventDefault();
-        const errorIcon = document.getElementsByClassName('error-icon');
-        const errorText = document.getElementsByClassName('error-text');
-        errorIcon.style.display = "block";
-      };
-      })(), true);
+        const errorIcon = document.querySelector('.error-icon');
+        const errorText = document.querySelector('.error-text');
+        
+        errorIcon.style.display = 'block';
+        errorText.style.display = 'block';
+
+        timeoutId = setTimeout(function() {
+          errorIcon.style.display = 'none';
+          errorText.style.display = 'none';
+        }, 5000);
+      }, true);
+      
     </script>
 
 

@@ -36,7 +36,6 @@
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid;
 }
 
 
@@ -89,7 +88,7 @@
     position: relative;
     height: 4em;
     width: 120px;
-    right: 4em;
+    right: 6em;
     border-radius: 25px;
     border: none;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
@@ -100,8 +99,7 @@
 .error-icon {
     display: none;
     position: relative;
-    top: 15px;
-    right: 75px;
+    right: 95px;
     width: 25px;
     height: 25px;
 }
@@ -109,8 +107,8 @@
 .error-text {
     display: none;
     position: relative;
-    bottom: 5px;
-    left: 10px;
+    bottom: .2em;
+    right: 100px;
     color: hsl(0, 80%, 65%);
 }
 
@@ -145,14 +143,16 @@
         text-align: center;
         padding: 2em 2em;
     }
-    .form-email{
-        padding-left: 3em;
+    .form-email input{
+        max-width: 30em;
+        margin: 0;
+        margin-left: .8em;
     }  
     
     .form-email button {
         width: 80px;
     }
     .error-text{
-        left: 58px;
+        
     }
 }
