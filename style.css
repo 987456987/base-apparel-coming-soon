@@ -68,11 +68,12 @@
 .form-email button{
     position: relative;
     height: 4em;
-    width: 5em;
+    width: 120px;
     right: 4em;
     border-radius: 25px;
     border: none;
     background-color: hsl(0, 36%, 70%);
+    box-shadow: 0 1.2em 2em 0 hsl(0, 36%, 75%);
 }
 
 @media (max-width: 1200px) {
@@ -107,6 +108,9 @@
     }
     .form-email{
         padding-left: 3em;
+    }
+    .form-email button {
+        width: 80px;
     }
 
 }
