@@ -151,8 +151,7 @@
     
     .form-email button {
         width: 80px;
+        right: 47px;
     }
-    .error-text{
-        
-    }
+    
 }
