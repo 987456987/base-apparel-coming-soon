@@ -50,6 +50,30 @@
     max-width: 450px;
 }
 
+.form-email{
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+}
+
+.form-email input{
+    height: 4em;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid hsl(0, 36%, 70%);
+    padding-left: 2em;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+.form-email button{
+    position: relative;
+    height: 4em;
+    width: 5em;
+    right: 4em;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(0, 36%, 70%);
+}
+
 @media (max-width: 1200px) {
     .main-container{
         justify-content: center;
@@ -81,6 +105,7 @@
         padding: 1em 2em;
     }
     .form-email{
-        margin: auto;
+        margin-left: 2em;
     }
+
 }
