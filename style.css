@@ -143,15 +143,16 @@
         text-align: center;
         padding: 2em 2em;
     }
+
+    
+
     .form-email input{
-        max-width: 30em;
-        margin: 0;
-        margin-left: .8em;
+        max-width: 35em;
     }  
     
     .form-email button {
         width: 80px;
-        right: 47px;
+        right: 40px;
     }
     
 }
