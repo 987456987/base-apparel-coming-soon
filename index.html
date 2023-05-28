@@ -18,54 +18,43 @@
       .attribution a { color: hsl(228, 45%, 44%); }
     </style>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('.form-email');
-        const errorText = document.querySelector('.error-text');
-
-        form.addEventListener('submit', function(event) {
-          const emailInput = form.querySelector('input[type="email"]');
-          const email = emailInput.value;
-
-          if (!isValidEmail(email)) {
-            errorText.style.display = 'block';
-            emailInput.classList.add('error');
-          } else {
-            errorText.style.display = 'none';
-            emailInput.classList.remove('error');
-            console.log('Submitted email:', email);
-          }
-        });
-
-        function isValidEmail(email) {
-          const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return regex.test(email);
-        }
-      });
-    </script>
+    
 
   </head>
   <body>
     <main class="main-container">
       <div class="content-container">
-        <img class="logo" src="/images/logo.svg">
-        <img class="img-mobile" src="images/hero-mobile.jpg">
+        <img class="logo" src="/images/logo.svg" alt="Base Apparel Logo">
+        <img class="img-mobile" src="images/hero-mobile.jpg" alt="Model photograph">
         <h1 class="head"><span class="head-accent">WE'RE</span><br> COMING<br> SOON</h1>
         <p class="text">
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
-        <form class="form-email">
+        <form id="email-form" class="form-email">
           <input type="email" placeholder="Email Address" required/>
           <img class="error-icon" src="images/icon-error.svg">
           <button type="submit">
             <img src="images/icon-arrow.svg">
           </button>
+          
         </form>
         <p class="error-text">Please enter a valid email</p>
       </div>
       <img class="img-desktop" src="images/hero-desktop.jpg">
     </main>
+
+    <script>
+      document.addEventListener('invalid', (function(){
+      return function(e) {
+        e.preventDefault();
+        const errorIcon = document.getElementsByClassName('error-icon');
+        const errorText = document.getElementsByClassName('error-text');
+        errorIcon.style.display = "block";
+      };
+      })(), true);
+    </script>
+
 
   </body>
 </html>

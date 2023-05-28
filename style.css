@@ -80,6 +80,11 @@
     padding-left: 2em;
     font-family: 'Josefin Sans', sans-serif;;
 }
+
+.form-email input:focus {
+    outline-color: hsl(0, 36%, 70%);
+}
+
 .form-email button{
     position: relative;
     height: 4em;
@@ -89,6 +94,7 @@
     border: none;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     box-shadow: 0 1.2em 2em 0 hsl(0, 36%, 75%);
+    cursor: pointer;
 }
 
 .error-icon {
@@ -110,19 +116,21 @@
 
 
 
+
+
 @media (max-width: 1200px) {
     .main-container{
         min-width: 100vw;
+        overflow: hidden;
     }
     .content-container{
-        width: 100%;
+        min-height: 100vh;
     }
     .img-desktop {
         display: none;
     }
     .img-mobile{
         display: block;
-        margin-bottom: 4em;
     }
     .logo{
         margin-left: 2em;
@@ -135,7 +143,6 @@
     }
     .text{
         text-align: center;
-        margin: auto;
         padding: 2em 2em;
     }
     .form-email{
